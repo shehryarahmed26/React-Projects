@@ -8,12 +8,16 @@ let Gameplay = () => {
     const [score, setscore] = useState(0)
     const [error, seterror] = useState('')
     let diceroll = () => {
+        if (score <= -10) {
+            alert('Game Over')
+            setscore(0)
+        }
         if (!selectednumber) {
             return seterror('You have not selected any number')
         }
         setrandomdice((Math.floor((Math.random() * 6) + 1)));
-        if (randomdice === selectednumber) {
-            setscore((prev) => prev += randomdice)
+        if (selectednumber === randomdice) {
+            setscore((prev) => prev += selectednumber)
         }
         else {
             setscore((prev) => prev -= 2)
@@ -25,7 +29,7 @@ let Gameplay = () => {
     console.log(selectednumber);
     let boxexarr = [1,2,3,4,5,6]
     let newarr = boxexarr.map((box, i) => {
-        return <div key={i} onClick={() => setselectednumber(box)} className={`bg-${selectednumber === box ? 'black' : 'white' } text-${selectednumber === box ? 'white' : 'black' } w-20 h-20 box flex justify-center items-center`}>
+        return <div key={i} onClick={() => setselectednumber(box)} className={`bg-${selectednumber === box ? 'black' : 'white' } text-${selectednumber === box ? 'white' : 'black' } w-16 h-16 box flex justify-center items-center`}>
             <p className="text-2xl font-bold">{box}</p>
         </div>
     })
@@ -34,8 +38,8 @@ let Gameplay = () => {
         <div className=" w-full h-fit flex justify-between px-16 mt-12">
         <div className="head ">
             <div className="left">
-                <h2 className="text-8xl font-semibold">{score}</h2>
-                <p className="text-xl">Total Score</p>
+                <h2 className="text-7xl font-semibold text-center">{score}</h2>
+                <p className="text-xl text-center">Total Score</p>
             </div>
         </div>
             <div className="right flex  flex-col items-end gap-5">
