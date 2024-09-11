@@ -1,4 +1,4 @@
-# React Project Collection
+# React Projects Collection
 
 This repository hosts a collection of React-based projects, showcasing various web development techniques, styling libraries, and deployment links. Each project is built with React and often integrates additional technologies like Tailwind CSS and Firebase.
 
