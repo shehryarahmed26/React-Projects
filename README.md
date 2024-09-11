@@ -6,11 +6,11 @@ You can find fully functional projects along with live demos for each in their r
 
 ## Projects
 
-1. **[Dice Game](https://https://dice-game-react-five.vercel.app/)** 
+1. **[Dice Game](https://dice-game-react-five.vercel.app/)** 
     - A simple dice game built with React & Tailwindcss.
     - Features: Random dice roll mechanics, interactive UI, and score tracking.
 
-2. **[Todo App](https://[deployed-link](https://react-todo-sh.vercel.app/))** 
+2. **[Todo App](https://react-todo-sh.vercel.app/))** 
     - A Todoapp built with React & tailwindcss.
     - Features: Add Task, Delete task.
 
