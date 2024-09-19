@@ -17,6 +17,15 @@ You can find fully functional projects along with live demos for each in their r
 3. **[Weather App](https://weather-app-sh.vercel.app/))** 
     - A weatherapp built with React & tailwindcss.
     - Features: Get  realtime weather info.
+
+4. **[Shopping Store](https://shopping-store-sh.vercel.app/))** 
+    - A Shopping Store built with React & tailwindcss.
+    - Features: category, Products, Search Funtionality.
+    - 
+
+3. **[Nike Landing Page](https://nike-landing-page-sh.vercel.app/))** 
+    - A Shoe Landing  Page built with React & tailwindcss.
+    - Features: reponsiveness.
 ...more projects coming soon.
 
 ## Tech Stack:
