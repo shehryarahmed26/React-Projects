@@ -13,7 +13,10 @@ You can find fully functional projects along with live demos for each in their r
 2. **[Todo App](https://react-todo-sh.vercel.app/))** 
     - A Todoapp built with React & tailwindcss.
     - Features: Add Task, Delete task.
-
+      
+3. **[Weather App](https://weather-app-sh.vercel.app/))** 
+    - A weatherapp built with React & tailwindcss.
+    - Features: Get  realtime weather info.
 ...more projects coming soon.
 
 ## Tech Stack:
