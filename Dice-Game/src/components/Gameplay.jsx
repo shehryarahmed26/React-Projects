@@ -29,13 +29,13 @@ let Gameplay = () => {
     console.log(selectednumber);
     let boxexarr = [1,2,3,4,5,6]
     let newarr = boxexarr.map((box, i) => {
-        return <div key={i} onClick={() => setselectednumber(box)} className={`bg-${selectednumber === box ? 'black' : 'white' } text-${selectednumber === box ? 'white' : 'black' } w-16 h-16 box flex justify-center items-center`}>
+        return <div key={i} onClick={() => setselectednumber(box)} className={`bg-${selectednumber === box ? 'black' : 'white' } text-${selectednumber === box ? 'white' : 'black' } w-10 h-10 sm:w-16 sm:h-16 box flex justify-center items-center`}>
             <p className="text-2xl font-bold">{box}</p>
         </div>
     })
     return <div className="container">
         <p className="text-red-500 text-xl float-end my-5 font-bold pr-14">{error}</p>
-        <div className=" w-full h-fit flex justify-between px-16 mt-12">
+        <div className=" w-full h-fit gap-8 sm:gap-0 items-center flex-col sm:flex-row flex justify-between px-16 mt-12">
         <div className="head ">
             <div className="left">
                 <h2 className="text-7xl font-semibold text-center">{score}</h2>

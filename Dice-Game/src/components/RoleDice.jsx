@@ -8,7 +8,7 @@ const RoleDice = ({randomdice, setrandomdice, diceroll, score, setscore}) => {
     }
 
     return <div className="container">
-    <div className="flex flex-col w-fit mx-auto text-center justify-center mt-2">
+    <div className="flex flex-col mt-8 w-fit mx-auto text-center justify-center mt-2">
             <img onClick={diceroll}  className="w-[225px]" src={`/Images/dice_${randomdice}.png`} alt="dice-1" />
             <p className="font-bold text-xl mb-3">Click on Dice to roll</p>
             <button onClick={() => setscore(0)} className="mb-2 rules border py-2 font-bold reset rounded">Reset Score</button>
